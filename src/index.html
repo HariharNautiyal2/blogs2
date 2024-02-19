@@ -1,13 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full w-full">
 <head>
   <meta charset="utf-8">
-  <title>Test</title>
+  <title>Blogs by harihar nautiyal</title>
+  <meta name="keywords" content="HariharNautiyal"/>
+  <meta name="description" content="Harihar Blogs | creative blogs by harihar nautiyal">
+  <meta property="og:title" content="Blogs by Harihar Nautiyal">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta property="og:url" content="http://blogs.harihar.site">
+  <meta property="og:image" content="https://hello.com/image.jpg">
 </head>
-<body>
-  <app-root></app-root>
+<body id="body" class="min-h-full w-full">
+  <app-root class="h-full overflow-x-scroll w-full fixed top-0 left-0"></app-root>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+  <script>
+  VANTA.CELLS({
+    el: "#body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    color1: 0x0,
+    color2: 0xf23535,
+    size: 2.20,
+    speed: 1.70
+  })
+  </script>
 </body>
 </html>

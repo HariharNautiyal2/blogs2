@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from "@angular/platform-browser";
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone:true,
+  imports: [RouterOutlet],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'test';
+  loading: boolean = true; // Flag to track loading state
+
+  constructor(private titleService: Title) { }
+
+  ngOnInit() {
+    
+  }
+
+
 }
