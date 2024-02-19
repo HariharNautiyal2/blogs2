@@ -14,7 +14,7 @@ const octokit = new Octokit({
 
 async function main() {
   const dataofall = await extractrepos();
-  fs.writeFile("./dist/test/browser/assets/data.json", JSON.stringify(dataofall), (error) => {
+  fs.writeFile("./data.json", JSON.stringify(dataofall), (error) => {
     if (error) {
       console.log('An error has occurred ', error);
       return;
